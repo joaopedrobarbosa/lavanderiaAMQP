@@ -11,7 +11,7 @@ while True:
         channel.basic_publish(exchange='',
                             routing_key='matriz',
                             body='Roupa para lavar ' + str(x))
-        print(" [x] Sent 'Roupa Enviada com Sucesso'")
+        print(" [x] 'Roupa Enviada com Sucesso'")
         x = x + 1
         time.sleep(5)
     except KeyboardInterrupt:

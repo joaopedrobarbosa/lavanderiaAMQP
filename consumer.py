@@ -7,7 +7,7 @@ channel = connection.channel()
 channel.queue_declare(queue='matriz')
 
 def callback(ch, method, properties, body):
-  print(" [x] Received " + str(body))
+  print(" [x] " + str(body))
 
 channel.basic_consume('matriz',
                       callback,
