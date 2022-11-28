@@ -1,0 +1,8 @@
+Para utilizar o sistema, abra um terminal no diretório que contem o sistema.
+    Em um deles utilize o seguinte comando "python publisher.py" ( para Windows 11 ) ou "python3 publisher.py" ( para Ubuntu 20.04 ) 
+    para enviar a mensagem.
+    Em outros terminais (pode abrir mais de 5 terminais) utilize o seguinte comando "python consumer.py" ( para Windows 11 ) ou "python3 consumer.py" ( para Ubuntu 20.04 ) 
+    para os consumidores receberem as mensagens.
+
+Agora, com o sistema rodando, inicializaremos as filas de mensagens, serão enviadas mensagens para onde foram abertos os terminais dos consumidores ( os terminais dos consumidores irão
+simular as filiais das lavanderias), o producer ira enviar mensagem mensagem a cada 5 segundos, e os consumers (filiais) irão receber mensagens de maneira ordenada.
